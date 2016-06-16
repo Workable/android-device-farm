@@ -1,0 +1,8 @@
+/target
+/build
+.idea
+*.iml
+.DS_Store
+/screenshots
+
+src/test/resources/testng-failed.xml
