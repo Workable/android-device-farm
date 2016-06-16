@@ -15,8 +15,8 @@ import org.testng.annotations.Listeners
 class DeviceFarmTestBase extends SteviaTestBase {
 
 
-    @BeforeClass()
-    contextInitBeforeTest() throws Exception {
+    @BeforeClass(alwaysRun = true)
+    contextInitBeforeClass() throws Exception {
 
         Map<String, String> parameters = ['rcHost'              : 'localhost',
                                           'rcPort'              : '4723',
@@ -37,7 +37,7 @@ class DeviceFarmTestBase extends SteviaTestBase {
 
 
     @AfterClass()
-    void cleanContextOnTest() {
+    void cleanContextOnClass(alwaysRun = true) {
         SteviaContext.clean();
     }
 

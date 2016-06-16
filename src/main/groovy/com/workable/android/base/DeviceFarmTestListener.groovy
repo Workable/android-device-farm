@@ -10,10 +10,10 @@ import org.testng.ITestListener
 import org.testng.ITestResult
 
 /**
- * AndroidTestListener
+ * DeviceFarmTestListener
  * <p/>
  * Listener class that is invoked by it's declaration in the suite file(s) e.g testng.xml inside <listener></listener> tags
- * This class implements The ITestListener,IConfigurationListener2,ISuiteListener and IMethodInterceptor interfaces available in testng framework
+ * This class implements The ITestListener,IConfigurationListener2,interfaces available in testng framework
  * thus provides us with the capability to add desired functionality in various pointcuts during a test execution.
  * <p/>
  * Created by panagiotis_tsiakos on 2/19/15.
