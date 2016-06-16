@@ -2,8 +2,8 @@ package com.workable.android.base
 
 import com.persado.oss.quality.stevia.selenium.core.SteviaContext
 import com.persado.oss.quality.stevia.spring.SteviaTestBase
-import org.junit.AfterClass
 import org.springframework.test.context.ContextConfiguration
+import org.testng.annotations.AfterClass
 import org.testng.annotations.BeforeClass
 import org.testng.annotations.Listeners
 
@@ -36,8 +36,8 @@ class DeviceFarmTestBase extends SteviaTestBase {
     }
 
 
-    @AfterClass()
-    void cleanContextOnClass(alwaysRun = true) {
+    @AfterClass(alwaysRun = true)
+    void cleanContextOnClass() {
         SteviaContext.clean();
     }
 
